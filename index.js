@@ -1,3 +1,11 @@
+const qrcode = require("qrcode-terminal"); 
+const { Client, MessageMedia } = require("whatsapp-web.js"); 
+const mqtt = require("mqtt"); 
+const listen = mqtt.connect("mqtt://test.mosquitto.org"); 
+const fetch = require("node-fetch"); 
+const delay = require("delay"); 
+let urlen = require("urlencode");
+const puppeteer = require("puppeteer");
 const {
   create,
   Client,
